@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,15 +7,79 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AYOOOO"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.101" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:text="PAY PER HOUR (in £):"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="30dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/payText"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="203dp"
+        android:text="Cost of item (in £s):"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="30dp"/>
+
+    <EditText
+        android:id="@+id/costItem"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="219dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="147dp"
+        android:text="check" />
+
+    <TextView
+        android:id="@+id/showText"
+        android:textAlignment="center"
+        android:layout_width="286dp"
+        android:layout_height="99dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnCheck"
+        android:layout_marginEnd="104dp"
+        android:text="huh" />
+
+</RelativeLayout>
